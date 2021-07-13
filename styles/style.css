@@ -222,3 +222,44 @@ section {
 .course-time i {
     color: #FF4A60;
 }
+
+
+/*---------------------------*\
+Optimizing for mobile devices
+\*---------------------------*/
+
+@media only screen and (max-width: 668px) {
+    section {
+        width: 92%;
+        height: auto;
+        margin-top: 10px;
+        padding: 4%
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .players {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 0;
+        grid-column-gap: 8px;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+    }
+
+    .bottom-section {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .courses {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 10px;
+    }
+
+}
