@@ -4,13 +4,29 @@
    common styles
 \*--------------*/
 
+:root {
+    --heading-color: #562EFF;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    background-color: #E5E5E5;
 }
 
 h3 {
     font-weight: 500;
+    margin: 3px;
+    font-size: 24px;
+}
+
+.grey {
+    color: darkgrey;
+}
+
+hr {
+    margin: 30px 0;
+    border: 1px solid #D1D1D1;
 }
 
 /* navigation  bar style */
@@ -25,7 +41,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #562EFF;
-    ;
+    padding: 5px;
 }
 
 .nav-item {
@@ -50,6 +66,7 @@ nav {
 .nav-item .far,
 .nav-item h3 {
     color: white;
+    cursor: pointer;
 }
 
 .nav-item img {
@@ -57,4 +74,82 @@ nav {
     width: 51px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+/*--------------------
+ Top section styles 
+ ---------------------*/
+
+/* players */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-top: 36px;
+    background-color: white;
+    border-radius: 5px;
+    height: 670px;
+    width: 870px;
+    padding: 35px;
+
+}
+
+
+.top-players-heading h3 {
+    margin-bottom: 37px;
+    color: var(--heading-color);
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 20px;
+}
+
+.players p {
+    margin-left: 16px;
+}
+
+.players div {
+    display: flex;
+    align-items: center;
+}
+
+.players img {
+    width: 56px;
+    height: 56px;
+}
+
+/* bolgs */
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 35px;
+}
+
+.top-blogs h3 {
+    margin-bottom: 29px;
+    color: var(--heading-color);
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+}
+
+.blog-info a {
+    text-decoration: none;
+}
+
+.blog-image img {
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
 }
