@@ -153,3 +153,72 @@ section {
     height: 117px;
     margin-right: 16px;
 }
+
+/*-------------------*\
+     Bottom section
+\*-------------------*/
+
+
+.bottom-section {
+    height: 362px;
+    margin-bottom: 30px;
+}
+
+.bottom-section h3 {
+    color: var(--heading-color);
+    margin-bottom: 27px;
+
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.course {
+    padding: 11px 11px 25px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 15px #ddd;
+}
+
+.course h1,
+.course p {
+    margin: 3px;
+}
+
+.course h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cource-image img {
+    width: 100%;
+}
+
+
+.soft-red {
+    color: #ED6B4F;
+}
+
+.course-info-progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px
+}
+
+.fa-star:not(.grey) {
+    color: #FFC014;
+}
+
+.course-time {
+    background-color: #FFE4E8;
+    padding: 2px 5px;
+    border-radius: 15px
+}
+
+.course-time,
+.course-time i {
+    color: #FF4A60;
+}
